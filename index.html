@@ -7,9 +7,23 @@
   <title>InformaConnect</title>
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.violet.min.css" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KV499MK8');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV499MK8" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header>
 
     <main class="container">
@@ -258,15 +272,6 @@
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
 
-          <select name="title" aria-label="Select you title" required>
-            <option selected disabled value="">
-              Select your title...
-            </option>
-            <option>Mr</option>
-            <option>Ms</option>
-            <option>Dr</option>
-          </select>
-
           <input type="text" name="job-title" placeholder="Job Title">
           <input type="text" name="company-name" placeholder="Company Name">
           <input type="text" name="name" placeholder="Name">
@@ -366,29 +371,36 @@
     </div>
   </section>
 
-  <section class="container">
+  <section class="container" style="width: 800px;">
     <video class="container-fluid" controls width="auto">
-      <source src="/public/video1.mp4" type="video/mp4">
+      <source src="/video1.mp4" type="video/mp4">
     </video>
   </section>
 
-  <footer data-theme="dark">
-    <div class="container text-center">
-      <p>Copyright &copy; 2024 Informa Connect</p>
+  <footer data-theme="dark" class="container">
+    <h3>Copyright &copy; 2024 Informa Connect</h3>
+    <div class="grid">
       <div>
-        <a href="#">About Us</a>
+        <div>
+          <a href="#">About Us</a>
+        </div>
+        <div>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <a href="#">FAQs</a>
+        </div>
       </div>
-      <div>
-        <a href="#">Contact</a>
-      </div>
-      <div>
-        <a href="#">FAQs</a>
-      </div>
+      <form method="post">
+        <fieldset role="group">
+          <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
+          <input type="submit" value="Subscribe" />
+        </fieldset>
+      </form>
+
     </div>
   </footer>
 
-
 </body>
-
 
 </html>
