@@ -74,9 +74,9 @@
       </div>
       <div>
         <h4>Feel Free to Reach Out</h4>
-        <form>
-          <select id="country_field_gen" name="country_field_gen"
-            class="ub-input-item single form_elem_country_field_gen" required="">
+        <form id="informa_form" method="post" action="index.html">
+          <select id="country_field" name="country_field_gen" class="ub-input-item single form_elem_country_field_gen"
+            required="">
             <option value="">Select Your Country/Region</option>
             <option value="United States">United States</option>
             <option value="Afghanistan">Afghanistan</option>
@@ -272,17 +272,17 @@
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
 
-          <input type="text" name="job-title" placeholder="Job Title">
-          <input type="text" name="company-name" placeholder="Company Name">
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="email" placeholder="Email">
+          <input id="job_title" type="text" name="job-title" placeholder="Job Title">
+          <input id="company_name" type="text" name="company-name" placeholder="Company Name">
+          <input id="name" type="text" name="name" placeholder="Name">
+          <input id="email" type="email" name="email" placeholder="Email">
 
           <div>
             <input type="checkbox" name="newletters">
             <span>Please tick this if you receive news and promotions</span>
           </div>
 
-          <input type="submit" name="submit" value="Submit">
+          <input id="informa_submit_btn" type="submit" name="submit" value="Submit">
         </form>
       </div>
 
@@ -378,8 +378,8 @@
   </section>
 
   <section class="container" style="width: 800px">
-    <iframe width="800" height="400px" src="https://www.youtube.com/embed/h9uFQv3t1AU?si=hN0CZpa0o3AmR5jW" title="YouTube video player"
-      frameborder="0"
+    <iframe width="800" height="400px" src="https://www.youtube.com/embed/h9uFQv3t1AU?si=hN0CZpa0o3AmR5jW"
+      title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
@@ -400,13 +400,14 @@
       </div>
       <form method="post">
         <fieldset role="group">
-          <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
+          <input id="newsletter_email" name="email" type="email" placeholder="Enter your email" autocomplete="email" />
           <input type="submit" value="Subscribe" />
         </fieldset>
       </form>
 
     </div>
   </footer>
+  <script defer src="/main.js"></script>
 
 </body>
 

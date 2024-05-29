@@ -5,3 +5,7 @@
 - Tree structure for Events.
 
 - looker
+
+Possible Custom Event Tracking:
+- Video Engagement Tracking.
+- 
