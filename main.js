@@ -18,7 +18,9 @@ informaForm.addEventListener('submit', async (event) => {
     event: 'Informa Form Submissino',
     inputId: 'informa_form',
     testEvent: 'testEvent',
-    ...informaDataObject
+    infomaDataObject: {
+      ...informaDataObject
+    }
   })
 
   try {
