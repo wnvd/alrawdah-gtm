@@ -21,7 +21,7 @@ informaForm.addEventListener('submit', async (event) => {
   })
 
   try {
-    const response = await fetch('/index.html', {
+    const response = await fetch('/', {
       method: 'Post',
       body: informaDataObject
     });
