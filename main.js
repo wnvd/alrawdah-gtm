@@ -13,6 +13,7 @@ informaForm.addEventListener('submit', async (event) => {
   }
 
 
+  console.log(informaDataObject);
   dataLayer.push({
     event: 'Informa Form Submissino',
     inputId: 'informa_form',
